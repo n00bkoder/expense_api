@@ -1,0 +1,5 @@
+### get entries
+GET http://127.0.0.1:8000/entries/ HTTP
+Content-Type: application/json
+Authorization: Token d84be5d6a5fcbe9956cf916e481e0380e9139737
+    
