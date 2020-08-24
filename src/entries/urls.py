@@ -1,8 +1,10 @@
-from .views import EntryViewSet
+from . import views
 from django.urls import path
-from rest_framework import routers
 
-router = routers.DefaultRouter()
-router.register('', EntryViewSet)
 
-urlpatterns = router.urls
+urlpatterns = [
+
+    path('', views.EntryView.as_view()),
+    path('<int:pk>/', views.EntryDetail.as_view()), 
+
+]
